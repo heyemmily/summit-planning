@@ -30,6 +30,53 @@ python budget-calculator.py
 | `team-locations.json` | Attendee tracking | When attendee list changes |
 | `visa-matrix.json` | Visa requirements lookup | Once per planning cycle |
 | `budget-calculator.py` | Cost analysis tool | Run after updating data |
+| `generate-reports.py` | Notion-ready markdown generator | Auto-runs on file changes |
+
+## Auto-Generated Reports for Notion
+
+The system automatically generates Notion-ready markdown reports whenever you update your data files.
+
+### Quick Usage
+
+```bash
+# Generate all reports once
+python generate-reports.py
+
+# Watch for changes and auto-regenerate (recommended)
+python generate-reports.py --watch
+
+# Generate specific report
+python generate-reports.py --report team
+python generate-reports.py --report visa
+python generate-reports.py --report locations
+python generate-reports.py --report summary
+```
+
+### Generated Reports
+
+Reports are saved to the `reports/` directory:
+
+| Report | File | Contents |
+|--------|------|----------|
+| Team Overview | `team-overview.md` | Regional breakdown, timezone distribution, visa flags |
+| Visa Matrix | `visa-matrix.md` | Requirements by destination, complexity scores |
+| Location Comparison | `location-comparison.md` | Cost breakdowns, pros/cons, recommendations |
+| Executive Summary | `executive-summary.md` | Consolidated view for decision-makers |
+
+### Notion Workflow
+
+1. **Start the watcher** in a terminal:
+   ```bash
+   python generate-reports.py --watch
+   ```
+
+2. **Edit your data files** (`team-locations.json`, `visa-matrix.json`, `locations.json`)
+
+3. **Reports auto-update** - The watcher detects changes and regenerates
+
+4. **Copy to Notion** - Open the generated `.md` files and paste into Notion pages
+
+The markdown is formatted with tables, callouts, and emojis that render properly in Notion.
 
 ## Workflow
 
