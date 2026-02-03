@@ -1,0 +1,3 @@
+city,country,region,flights,hotels,venue,catering,transport,subtotal,contingency,total,visa_score,flight_coverage
+Example City 2,Country,APAC,0,0,0,6000,3000,9000,900.0,9900.0,0,0
+Lisbon,Portugal,EMEA,34000,28800,7500,8000,3000,81300,8130.0,89430.0,2,75
