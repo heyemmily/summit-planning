@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "last_updated": "YYYY-MM-DD",
+    "source": "IATA Travel Centre / Government websites",
+    "notes": "Verify requirements closer to travel date as rules change"
+  },
+  "legend": {
+    "visa_free": "No visa required",
+    "visa_on_arrival": "Visa obtained on arrival",
+    "e_visa": "Electronic visa (apply online)",
+    "advance_visa": "Must apply at embassy/consulate before travel",
+    "not_permitted": "Entry not permitted or extremely difficult"
+  },
+  "processing_times": {
+    "visa_free": 0,
+    "visa_on_arrival": 0,
+    "e_visa": 3,
+    "advance_visa": 21,
+    "not_permitted": null
+  },
+  "candidate_destinations": [
+    "Lisbon, Portugal",
+    "Barcelona, Spain",
+    "Amsterdam, Netherlands",
+    "London, UK",
+    "Dubai, UAE",
+    "Singapore",
+    "Tokyo, Japan",
+    "Mexico City, Mexico"
+  ],
+  "matrix": {
+    "United States": {
+      "Lisbon, Portugal": {"requirement": "visa_free", "max_stay_days": 90, "notes": "Schengen zone"},
+      "Barcelona, Spain": {"requirement": "visa_free", "max_stay_days": 90, "notes": "Schengen zone"},
+      "Amsterdam, Netherlands": {"requirement": "visa_free", "max_stay_days": 90, "notes": "Schengen zone"},
+      "London, UK": {"requirement": "visa_free", "max_stay_days": 180, "notes": ""},
+      "Dubai, UAE": {"requirement": "visa_on_arrival", "max_stay_days": 30, "notes": ""},
+      "Singapore": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Tokyo, Japan": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Mexico City, Mexico": {"requirement": "visa_free", "max_stay_days": 180, "notes": ""}
+    },
+    "United Kingdom": {
+      "Lisbon, Portugal": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Barcelona, Spain": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Amsterdam, Netherlands": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "London, UK": {"requirement": "visa_free", "max_stay_days": null, "notes": "Home country"},
+      "Dubai, UAE": {"requirement": "visa_on_arrival", "max_stay_days": 30, "notes": ""},
+      "Singapore": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Tokyo, Japan": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Mexico City, Mexico": {"requirement": "visa_free", "max_stay_days": 180, "notes": ""}
+    },
+    "India": {
+      "Lisbon, Portugal": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "Barcelona, Spain": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "Amsterdam, Netherlands": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "London, UK": {"requirement": "advance_visa", "max_stay_days": 180, "notes": "UK visa required"},
+      "Dubai, UAE": {"requirement": "visa_on_arrival", "max_stay_days": 14, "notes": "14 days, extendable"},
+      "Singapore": {"requirement": "visa_free", "max_stay_days": 30, "notes": ""},
+      "Tokyo, Japan": {"requirement": "advance_visa", "max_stay_days": 15, "notes": ""},
+      "Mexico City, Mexico": {"requirement": "e_visa", "max_stay_days": 180, "notes": "SAE required or valid US/Canada/UK/Schengen visa"}
+    },
+    "China": {
+      "Lisbon, Portugal": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "Barcelona, Spain": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "Amsterdam, Netherlands": {"requirement": "advance_visa", "max_stay_days": 90, "notes": "Schengen visa required"},
+      "London, UK": {"requirement": "advance_visa", "max_stay_days": 180, "notes": "UK visa required"},
+      "Dubai, UAE": {"requirement": "visa_on_arrival", "max_stay_days": 30, "notes": ""},
+      "Singapore": {"requirement": "visa_free", "max_stay_days": 30, "notes": ""},
+      "Tokyo, Japan": {"requirement": "advance_visa", "max_stay_days": 15, "notes": ""},
+      "Mexico City, Mexico": {"requirement": "advance_visa", "max_stay_days": 180, "notes": ""}
+    },
+    "Germany": {
+      "Lisbon, Portugal": {"requirement": "visa_free", "max_stay_days": null, "notes": "EU citizen"},
+      "Barcelona, Spain": {"requirement": "visa_free", "max_stay_days": null, "notes": "EU citizen"},
+      "Amsterdam, Netherlands": {"requirement": "visa_free", "max_stay_days": null, "notes": "EU citizen"},
+      "London, UK": {"requirement": "visa_free", "max_stay_days": 180, "notes": ""},
+      "Dubai, UAE": {"requirement": "visa_on_arrival", "max_stay_days": 30, "notes": ""},
+      "Singapore": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Tokyo, Japan": {"requirement": "visa_free", "max_stay_days": 90, "notes": ""},
+      "Mexico City, Mexico": {"requirement": "visa_free", "max_stay_days": 180, "notes": ""}
+    }
+  },
+  "destination_summary": {
+    "Lisbon, Portugal": {
+      "visa_free_count": 0,
+      "visa_on_arrival_count": 0,
+      "advance_visa_count": 0,
+      "complexity_score": 0,
+      "notes": "Calculate after populating full matrix"
+    }
+  },
+  "action_items": [
+    {
+      "nationality": "India",
+      "destination": "Lisbon, Portugal",
+      "action": "Apply for Schengen visa",
+      "lead_time_days": 30,
+      "documents_needed": ["Passport", "Invitation letter", "Travel insurance", "Bank statements"]
+    }
+  ]
+}

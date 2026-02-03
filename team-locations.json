@@ -1,0 +1,111 @@
+{
+  "metadata": {
+    "last_updated": "YYYY-MM-DD",
+    "total_attendees": 40,
+    "countries_represented": 18,
+    "notes": "Update as attendee list is finalized"
+  },
+  "regional_summary": {
+    "EMEA": {
+      "count": 0,
+      "percentage": 0,
+      "countries": []
+    },
+    "APAC": {
+      "count": 0,
+      "percentage": 0,
+      "countries": []
+    },
+    "Americas": {
+      "count": 0,
+      "percentage": 0,
+      "countries": []
+    }
+  },
+  "by_country": [
+    {
+      "country": "United States",
+      "country_code": "US",
+      "region": "Americas",
+      "count": 10,
+      "nearest_hub_airport": "SFO",
+      "visa_restrictions": {
+        "has_restrictions": false,
+        "restricted_destinations": [],
+        "notes": ""
+      },
+      "team_members": [
+        {
+          "name": "Team Member 1",
+          "city": "San Francisco",
+          "timezone": "America/Los_Angeles",
+          "dietary_restrictions": "",
+          "visa_status": "n/a"
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "country_code": "GB",
+      "region": "EMEA",
+      "count": 5,
+      "nearest_hub_airport": "LHR",
+      "visa_restrictions": {
+        "has_restrictions": false,
+        "restricted_destinations": [],
+        "notes": ""
+      },
+      "team_members": []
+    },
+    {
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "EMEA",
+      "count": 3,
+      "nearest_hub_airport": "FRA",
+      "visa_restrictions": {
+        "has_restrictions": false,
+        "restricted_destinations": [],
+        "notes": ""
+      },
+      "team_members": []
+    },
+    {
+      "country": "India",
+      "country_code": "IN",
+      "region": "APAC",
+      "count": 4,
+      "nearest_hub_airport": "BLR",
+      "visa_restrictions": {
+        "has_restrictions": true,
+        "restricted_destinations": ["Schengen", "UK", "US", "Canada", "Australia"],
+        "notes": "Requires advance visa for most destinations"
+      },
+      "team_members": []
+    },
+    {
+      "country": "Japan",
+      "country_code": "JP",
+      "region": "APAC",
+      "count": 2,
+      "nearest_hub_airport": "NRT",
+      "visa_restrictions": {
+        "has_restrictions": false,
+        "restricted_destinations": [],
+        "notes": "Strong passport, visa-free to most destinations"
+      },
+      "team_members": []
+    }
+  ],
+  "visa_flag_summary": {
+    "total_with_restrictions": 0,
+    "nationalities_requiring_advance_visas": [],
+    "recommended_lead_time_weeks": 8
+  },
+  "timezone_analysis": {
+    "earliest_timezone": "Asia/Tokyo",
+    "latest_timezone": "America/Los_Angeles",
+    "max_spread_hours": 17,
+    "optimal_meeting_window_utc": "14:00-16:00"
+  }
+}

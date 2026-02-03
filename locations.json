@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "last_updated": "YYYY-MM-DD",
+    "team_size": 40,
+    "currency": "USD",
+    "notes": "Update estimates as quotes are received"
+  },
+  "locations": [
+    {
+      "city": "Lisbon",
+      "country": "Portugal",
+      "region": "EMEA",
+      "flight_analysis": {
+        "avg_cost_per_person": 850,
+        "estimated_total_flights": 34000,
+        "direct_flight_coverage_pct": 75,
+        "avg_flight_duration_hours": 6.5,
+        "notes": "Good hub for Europe, reasonable from US East Coast"
+      },
+      "hotel_estimates": {
+        "avg_nightly_rate": 180,
+        "nights": 4,
+        "rooms_needed": 40,
+        "group_rate_available": true,
+        "estimated_total": 28800,
+        "hotel_options": [
+          {"name": "Hotel A", "stars": 4, "rate": 160},
+          {"name": "Hotel B", "stars": 4, "rate": 180},
+          {"name": "Hotel C", "stars": 5, "rate": 250}
+        ]
+      },
+      "venue_options": [
+        {
+          "name": "Conference Center A",
+          "capacity": 60,
+          "daily_rate": 2500,
+          "includes_av": true,
+          "includes_catering": false
+        },
+        {
+          "name": "Hotel Conference Room",
+          "capacity": 50,
+          "daily_rate": 1800,
+          "includes_av": true,
+          "includes_catering": true
+        }
+      ],
+      "visa_complexity_score": 2,
+      "visa_notes": "Schengen zone - easy for most, some nationalities need advance visa",
+      "pros": [
+        "Affordable compared to Western Europe",
+        "Great weather year-round",
+        "Strong English proficiency",
+        "Good food and culture scene"
+      ],
+      "cons": [
+        "Longer flights from APAC",
+        "Limited direct flights from some regions"
+      ],
+      "cost_summary": {
+        "flights": 34000,
+        "hotels": 28800,
+        "venue": 7500,
+        "catering_estimate": 8000,
+        "ground_transport": 3000,
+        "contingency_pct": 10,
+        "total_estimated": 89430
+      }
+    },
+    {
+      "city": "Example City 2",
+      "country": "Country",
+      "region": "APAC",
+      "flight_analysis": {
+        "avg_cost_per_person": 0,
+        "estimated_total_flights": 0,
+        "direct_flight_coverage_pct": 0,
+        "avg_flight_duration_hours": 0,
+        "notes": ""
+      },
+      "hotel_estimates": {
+        "avg_nightly_rate": 0,
+        "nights": 4,
+        "rooms_needed": 40,
+        "group_rate_available": false,
+        "estimated_total": 0,
+        "hotel_options": []
+      },
+      "venue_options": [],
+      "visa_complexity_score": 0,
+      "visa_notes": "",
+      "pros": [],
+      "cons": [],
+      "cost_summary": {
+        "flights": 0,
+        "hotels": 0,
+        "venue": 0,
+        "catering_estimate": 0,
+        "ground_transport": 0,
+        "contingency_pct": 10,
+        "total_estimated": 0
+      }
+    }
+  ],
+  "scoring_criteria": {
+    "visa_complexity": {
+      "1": "No visa required for any team members",
+      "2": "Some visa-on-arrival, no advance visas",
+      "3": "1-5 people need advance visas",
+      "4": "6-10 people need advance visas",
+      "5": "10+ people need advance visas or complex requirements"
+    },
+    "weights": {
+      "total_cost": 0.35,
+      "visa_complexity": 0.25,
+      "flight_convenience": 0.20,
+      "venue_quality": 0.10,
+      "destination_appeal": 0.10
+    }
+  }
+}
