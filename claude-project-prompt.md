@@ -15,7 +15,7 @@ We are planning TWO summits in 2026:
 - **Key constraint:** Vlad + Ernie need visas for Poland (2-3 months processing). Turkey requires almost no visas.
 
 ### Summit 2: Q4 Global Summit
-- **Who:** 40+ people from 18 countries
+- **Who:** 44 people from 17 countries
 - **When:** October-November 2026 (avoid US Thanksgiving, avoid high season)
 - **Purpose:** Company-wide alignment, culture building
 - **Last summit:** Was in Turkey/Istanbul during high season (want to improve on this)
@@ -36,11 +36,23 @@ We are planning TWO summits in 2026:
 - **Alexander** - Only person needing Turkey visa (easy e-permit).
 - **Paul** - CEO, plans to attend.
 
+### Team Roster (from Istanbul summit travel CSV - primary team data source)
+44 people across 17 countries. Key distribution:
+- **Americas (22):** USA (9), Colombia (7), Brazil (4), Argentina (1), Venezuela (1), Canada (1)
+- **EMEA (19):** Poland (5), Portugal (2), Ireland (2), Kazakhstan (3), Belarus (1), Spain (1), Lithuania (1), Estonia (1), Kenya (1), Finland (1)
+- **APAC (3):** Philippines (3)
+
+### Team Changes (since Istanbul summit)
+- **Removed:** Shulhan Nikita and Aleksandr Briakin (no longer on team)
+- **Cleared:** Daniil Neudakh can travel (citizenship issue resolved)
+- **Cleared:** Belly Parra Lopez passport/visa is not a blocker
+
 ### Visa Flags
 - Poland: Vlad and Ernie need advance visas (2-3 months)
-- Turkey: Almost visa-free for everyone (only Alexander needs easy e-permit)
+- Turkey: Almost visa-free for everyone
 - Serbia: Easier visa situation than Poland, needs detailed research
 - Dorothy (Philippines): Visas are hard for most destinations
+- Belly Parra Lopez (Colombia): Cannot route through USA (no US visa)
 
 ## Decision Framework: RAPID
 - **R**ecommend: Emmily (planner) proposes options with data
@@ -66,9 +78,9 @@ We are planning TWO summits in 2026:
 - Generate Notion-friendly markdown when asked for reports
 
 ## Uploaded Files Reference
+- `Istanbul Team Summit - Travel Information_Submissions_2026-02-19.csv` — **PRIMARY team data**: 44 members with names, departure cities, airports, countries (replaces team-locations.json)
 - `2026_Summit_Availability.xlsx - Q2 - May-June 2026.csv` — Q2 availability for 7 team leads
 - `locations.json` — Location comparison template with cost fields
-- `team-locations.json` — Team member tracking by region/country
 - `visa-matrix.json` — Visa requirements matrix template
 - `budget-comparison.md` — Sample budget comparison output
 - `tasks.md` — Full task tracker (Phase 0-5)
