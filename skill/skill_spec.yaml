@@ -1,0 +1,32 @@
+name: summit-planning-skill
+version: 0.1.0
+description: "A Claude Code skill to analyze summit locations, compare costs, and export reports."
+intents:
+  - name: compare_locations
+    description: Generate a cost comparison across all candidate locations.
+    examples:
+      - "Compare all candidate cities and rank by total cost"
+      - "Show me a cost comparison for the locations file"
+
+  - name: analyze_location
+    description: Provide a detailed analysis for a single city.
+    examples:
+      - "Analyze Lisbon for the summit"
+      - "What's the per-person cost for Tokyo?"
+
+  - name: export_report
+    description: Export results to CSV or Markdown for presentation use.
+    examples:
+      - "Export the comparison as markdown"
+      - "Create a CSV export of the budget comparison"
+
+  - name: explain_format
+    description: Explain the JSON format expected for `locations.json` and `team-locations.json`.
+    examples:
+      - "What fields does locations.json require?"
+      - "How should I format team-locations.json?"
+
+endpoints:
+  - path: /compare
+    method: POST
+    description: "Run the comparison; accepts optional `location` and `export` parameters."
