@@ -159,3 +159,16 @@ Adjust weights in `locations.json` under `scoring_criteria.weights`.
 ---
 
 *Need help? Check `tasks.md` for the current phase and next actions.*
+
+## Skill Integration
+
+This repository includes a small Claude Code / skill wrapper in the `skill/` folder that
+exposes the functionality of `budget-calculator.py` via an HTTP endpoint and a CLI wrapper.
+
+- See `skill/README_SKILL.md` for quick start instructions to run the FastAPI skill server.
+- Example request payloads are in the `examples/` folder.
+
+If you want deeper research assistance (flight scouting, hotel sourcing, visa research),
+consider integrating dedicated research skills. A helpful reference implementation is:
+https://github.com/Weizhena/Deep-Research-skills/tree/master/skills/research-en
+
