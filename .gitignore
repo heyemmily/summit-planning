@@ -1,0 +1,9 @@
+/.venv
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+budget-comparison.csv
+budget-comparison.md
+.vscode/
+.DS_Store

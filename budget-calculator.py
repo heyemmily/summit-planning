@@ -18,6 +18,7 @@ import argparse
 from datetime import datetime
 import json
 from pathlib import Path
+from typing import Optional
 
 
 def load_locations(filepath: str = "locations.json") -> dict:
@@ -30,7 +31,7 @@ def load_locations(filepath: str = "locations.json") -> dict:
         return json.load(f)
 
 
-def load_team_data(filepath: str = "team-locations.json") -> dict:
+def load_team_data(filepath: str = "team-locations.json") -> Optional[dict]:
     """Load team location data from JSON file."""
     path = Path(filepath)
     if not path.exists():
@@ -40,7 +41,7 @@ def load_team_data(filepath: str = "team-locations.json") -> dict:
         return json.load(f)
 
 
-def load_visa_matrix(filepath: str = "visa-matrix.json") -> dict:
+def load_visa_matrix(filepath: str = "visa-matrix.json") -> Optional[dict]:
     """Load visa matrix from JSON file."""
     path = Path(filepath)
     if not path.exists():
