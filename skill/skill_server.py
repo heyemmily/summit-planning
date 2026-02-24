@@ -1,10 +1,10 @@
-from importlib.machinery import SourceFileLoader
 import importlib.util
-import types
+from importlib.machinery import SourceFileLoader
 import os
+from typing import Optional
+
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import Optional
 
 app = FastAPI(title="Summit Planning Skill")
 
@@ -43,13 +43,13 @@ def compare(req: CompareRequest):
     try:
         mod = load_budget_module()
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        raise HTTPException(status_code=500, detail=str(e)) from e
 
     # Load data
     try:
         data = mod.load_locations(req.file)
     except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Failed to load data: {e}")
+        raise HTTPException(status_code=400, detail=f"Failed to load data: {e}") from e
 
     if req.location:
         results = mod.generate_comparison_table(data)

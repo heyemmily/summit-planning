@@ -5,9 +5,9 @@ This script loads the existing `budget-calculator.py` dynamically and exposes
 the same analysis features programmatically for integration and testing.
 """
 import argparse
-import os
 import importlib.util
 from importlib.machinery import SourceFileLoader
+import os
 
 
 def load_module():
