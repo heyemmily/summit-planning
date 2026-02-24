@@ -1,5 +1,7 @@
 # Summit Planning System
 
+[![CI](https://github.com/heyemmily/summit-planning/actions/workflows/ci.yml/badge.svg)](https://github.com/heyemmily/summit-planning/actions/workflows/ci.yml)
+
 A structured system for planning global team summits with 40+ attendees from multiple countries.
 
 ## Quick Start

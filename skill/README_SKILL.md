@@ -1,5 +1,7 @@
 # Summit Planning Skill
 
+[![CI](https://github.com/heyemmily/summit-planning/actions/workflows/ci.yml/badge.svg)](https://github.com/heyemmily/summit-planning/actions/workflows/ci.yml)
+
 This folder contains a small Claude Code skill wrapper around the existing
 `budget-calculator.py` tool. It includes a FastAPI server and a CLI wrapper so
 the functionality can be called programmatically by a skill runtime.
